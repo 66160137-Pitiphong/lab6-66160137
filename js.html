@@ -18,6 +18,24 @@
 
         // แสดงผลข้อมูลใน Console
         console.log(`ชื่อ: ${yourname}, อายุ: ${age}, เกรดเฉลี่ย: ${gpa}, นักเรียน: ${isStudent}`);
+
+        function checkGrade(score) {
+    if (score >= 80) {
+        return "A";
+    } else if (score >= 70) {
+        return "B";
+    } else if (score >= 60) {
+        return "C";
+    } else if (score >= 50) {
+        return "D";
+    } else {
+        return "F";
+    }
+}
+
+// ทดสอบฟังก์ชัน
+let score = 85; // คะแนนที่ต้องการตรวจสอบ
+console.log(`คะแนน: ${score}, เกรด: ${checkGrade(score)}`);
     </script>
 </body>
 </html>
